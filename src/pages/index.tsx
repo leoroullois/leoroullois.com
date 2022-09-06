@@ -3,6 +3,7 @@ import React from 'react';
 import type {NextPage} from 'next';
 import Head from 'next/head';
 import Hero from '@components/hero';
+import Cursor from '@components/cursor';
 
 const Home: NextPage = () => {
   return (
@@ -10,9 +11,10 @@ const Home: NextPage = () => {
       <Head>
         <title>Léo ROULLOIS - Portfolio</title>
       </Head>
+      <Cursor />
       <main className='flex flex-col w-full h-full min-h-screen'>
         <Hero />
-        <p>
+        <p className="cursor-hover">
           Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint
           cillum sint consectetur cupidatat.
         </p>

@@ -8,6 +8,7 @@ const Button: FC<PropsWithChildren<IProps>> = ({children, type}) => {
   return (
     <button
       className={clsx(
+        'cursor-hover',
         'flex items-center justify-center rounded-lg px-6 py-4 font-bold duration-100',
         {
           'bg-blue-600 text-blue-50': type === 'primary',
