@@ -9,7 +9,7 @@ import {useOutsideClick} from 'src/hooks/use-outside-click';
 interface IProps {
   links: ILinks[];
   icons: IIconsText[];
-  toggleMenu: MouseEventHandler<Element>; 
+  toggleMenu: MouseEventHandler<Element>;
   isOpen: boolean;
   setIsOpen: Function;
 }
@@ -21,6 +21,7 @@ const NavBar: FC<IProps> = ({links, icons, toggleMenu, isOpen, setIsOpen}) => {
       setIsOpen(false);
     }
   };
+
   useOutsideClick(ref, outsideClickHandler);
 
   return (
@@ -44,14 +45,30 @@ const NavBar: FC<IProps> = ({links, icons, toggleMenu, isOpen, setIsOpen}) => {
       >
         {links.map(({href, label}, i) => (
           <Link href={href} key={i}>
-            <a className='font-semibold'>{label}</a>
+            <a
+              className={clsx(
+                'cursor-hover',
+                'inline-block relative font-semibold duration-100',
+                'before:duration-100 before:opacity-0 before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500',
+                'hover:text-white hover:before:opacity-100 '
+              )}
+            >
+              <span className={clsx('relative')}>{label}</span>
+            </a>
           </Link>
         ))}
       </div>
       <div className={clsx('flex flex-row gap-x-3 mt-6', 'md:mt-0')}>
         {icons.map(({href, icon}, i) => (
           <Link href={href} key={i}>
-            <a className="flex justify-center items-center">{icon}</a>
+            <a
+              className={clsx(
+                'cursor-hover',
+                'flex justify-center items-center'
+              )}
+            >
+              {icon}
+            </a>
           </Link>
         ))}
       </div>

@@ -1,12 +1,12 @@
-import React, { FC } from "react";
+import clsx from 'clsx';
+import React, {FC, PropsWithChildren} from 'react';
 
 interface IProps {
-  children: JSX.Element | JSX.Element[];
   className?: string;
 }
-const Wrapper: FC<IProps> = ({ children, className }) => {
+const Wrapper: FC<PropsWithChildren<IProps>> = ({children, className}) => {
   return (
-    <div className={`flex my-0 mx-auto w-11/12 max-w-6xl ${className}`}>
+    <div className={clsx('flex my-0 mx-auto w-11/12 max-w-6xl', className)}>
       {children}
     </div>
   );

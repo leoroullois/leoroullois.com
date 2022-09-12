@@ -3,8 +3,9 @@ import React from 'react';
 import clsx from 'clsx';
 import Image from 'next/image';
 import {email} from 'src/lib/constants';
-import Button from './button';
-import Wrapper from './_common/wrapper';
+
+import Button from '@components/button';
+import Wrapper from '@common/wrapper';
 
 const Hero = () => {
   return (

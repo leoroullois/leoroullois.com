@@ -1,11 +1,5 @@
 import clsx from 'clsx';
-import React, {
-  FC,
-  MouseEvent,
-  useEffect,
-  useRef,
-  useState,
-} from 'react';
+import React, {FC, useEffect, useRef, useState} from 'react';
 
 const Cursor: FC = () => {
   const [cursorState, setCursorState] = useState<'main' | 'hover'>('main');
@@ -18,7 +12,6 @@ const Cursor: FC = () => {
 
       ref.current.style.left = `${pageX - 28}px`;
       ref.current.style.top = `${pageY - 28}px`;
-
     };
 
     document.addEventListener('mousemove', moveListener);
@@ -47,7 +40,6 @@ const Cursor: FC = () => {
     };
   });
 
-
   useEffect(() => {
     const setMainCursor = () => setCursorState('main');
     const elements = document.querySelectorAll('.cursor-hover');
@@ -71,13 +63,14 @@ const Cursor: FC = () => {
     <div
       ref={ref}
       className={clsx(
-        'flex pointer-events-none justify-center items-center z-50 absolute w-14 h-14 rounded-full border-4 border-green-500 duration-100',
+        'flex pointer-events-none justify-center items-center z-50 absolute w-14 h-14 rounded-full border-4 border-pink-500 duration-100',
         {
-          'bg-green-500/20 w-20 h-20 -translate-x-[12px] -translate-y-[11px]': cursorState === 'hover',
+          'bg-slate-500/20 w-20 h-20 -translate-x-[12px] -translate-y-[11px]':
+            cursorState === 'hover',
         }
       )}
     >
-      <div className='h-2 w-2 bg-green-500 rounded-full'></div>
+      <div className='h-2 w-2 bg-pink-600 rounded-full'></div>
     </div>
   );
 };

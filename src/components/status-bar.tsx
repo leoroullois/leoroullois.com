@@ -1,5 +1,4 @@
-import React, {FC, useEffect, useRef, useState} from 'react';
-import {useWindowSize} from 'src/hooks/use-window-size';
+import React, {FC, useEffect, useState} from 'react';
 
 const StatusBar: FC = () => {
   const [scroll, setScroll] = useState(0);
@@ -18,15 +17,19 @@ const StatusBar: FC = () => {
   }, []);
 
   const getProgressBarWidth = (scroll: number): number => {
-    const {clientWidth} = document.documentElement;
-    const width = (scroll / 100) * clientWidth;
-    return width;
+    if (typeof document === 'undefined') {
+      return 0;
+    } else {
+      const {clientWidth} = document?.documentElement;
+      const width = (scroll / 100) * clientWidth;
+      return width;
+    }
   };
 
   return (
     <div
       style={{width: getProgressBarWidth(scroll)}}
-      className='fixed top-0 left-0 z-40 h-2 bg-gradient-to-r from-green-500 to-lime-500 rounded-full'
+      className='fixed top-0 left-0 z-40 h-2 bg-gradient-to-r from-rose-500 to-pink-500'
     ></div>
   );
 };
