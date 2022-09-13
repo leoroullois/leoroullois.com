@@ -1,12 +1,9 @@
+import { ICompetence } from '@lib/types';
 import clsx from 'clsx';
 import Image from 'next/image';
 import React, {FC} from 'react';
 
-interface IProps {
-  label: string;
-  logo: string;
-}
-const Competence: FC<IProps> = ({label, logo}) => {
+const Competence: FC<ICompetence> = ({label, logo, width, height}) => {
   return (
     <article
       className={clsx(
@@ -19,10 +16,8 @@ const Competence: FC<IProps> = ({label, logo}) => {
         loading='lazy'
         src={logo}
         alt={`Logo of the ${label} technologie.`}
-        width={1280 / 25}
-        height={829 / 25}
-        // layout="fill"
-        // layout="responsive"
+        width={width}
+        height={height}
       />
       <span>{label}</span>
     </article>

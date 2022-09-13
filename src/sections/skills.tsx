@@ -1,7 +1,9 @@
 import Competence from '@components/cards/competence';
+import Technologies from '@components/technologies';
 import Bars from '@components/_common/bars';
 import Title from '@components/_common/title';
 import Wrapper from '@components/_common/wrapper';
+import {competences} from '@lib/data';
 import clsx from 'clsx';
 import React from 'react';
 
@@ -20,30 +22,11 @@ const Skills = () => {
         <h2 className='text-center text-3xl font-serif font-semibold'>
           Which technologies do I use?
         </h2>
-        <Bars theme='blue' align='left' />
+        <Bars theme='blue' align='center' />
         <div className='flex flex-col gap-y-8'>
-          <div className='flex flex-col gap-y-5'>
-            <h3>Web</h3>
-            <div className='flex flex-wrap gap-x-3 gap-y-5'>
-              <Competence label='HTML & CSS' logo='/skills/html_css.png' />
-            </div>
-          </div>
-
-          <div className='flex flex-col gap-y-5'>
-            <h3>API & Database</h3>
-            <div className='flex flex-wrap gap-x-3 gap-y-5'>
-              <Competence label='HTML & CSS' logo='/skills/html_css.png' />
-            </div>
-          </div>
-
-          <div className='flex flex-col gap-y-5'>
-            <h3>Tools & other</h3>
-            <div className='flex flex-wrap gap-x-3 gap-y-5'>
-              <Competence label='HTML & CSS' logo='/skills/html_css.png' />
-            </div>
-          </div>
-
-
+          <Technologies category='Web' />
+          <Technologies category='API & Database' />
+          <Technologies category='Tools & other' />
         </div>
       </Wrapper>
     </section>

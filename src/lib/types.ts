@@ -7,3 +7,10 @@ export interface ILinks {
   href: string;
 }
 
+export interface ICompetence {
+  category: "Web" | "API & Database" | "Tools & other";
+  label: string;
+  logo: string;
+  width: number;
+  height: number;
+}

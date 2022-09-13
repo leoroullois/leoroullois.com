@@ -1,3 +1,5 @@
+import { ICompetence } from "./types"
+
 export const references = [
   {
     title: "Titre de mopn truc",
@@ -20,4 +22,21 @@ export const references = [
     skills: ["TypeScript", "React","Next.js"],
     url: "https://www.github.com",
   },
+]
+
+export const competences : ICompetence[] = [
+  {
+    category: "Web",
+    label: "HTML & CSS",
+    logo: "/skills/html_css.png",
+    width: 1280/25,
+    height: 829/25,
+  },
+  {
+    label: "JavaScript",
+    category: "Web",
+    logo: "/skills/javascript.svg",
+    width: 50,
+    height: 50,
+  }
 ]
