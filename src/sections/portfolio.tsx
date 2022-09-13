@@ -13,7 +13,7 @@ const Portfolio: FC = () => {
         <div className='flex flex-col gap-y-5'>
           <Title as='h2'>Portoflio</Title>
           <h2 className='text-center text-3xl font-serif font-semibold' >Développement front-end</h2>
-          <Bars />
+          <Bars align='left' theme="blue" />
         </div>
         <div className={clsx("grid gap-y-8 grid-cols-1 auto-rows-auto", "sm:grid-cols-2 sm:gap-x-5")}>
           {references.map((props, i) => <References key={i} {...props} />)}

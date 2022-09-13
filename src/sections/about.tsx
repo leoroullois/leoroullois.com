@@ -7,7 +7,7 @@ const About = () => {
     <section className='py-5'>
       <Wrapper className='flex-col gap-y-5'>
         <h2 className='text-3xl font-semibold'>About me</h2>
-        <Bars />
+        <Bars theme="black" align='center' />
         <div className="grid gap-5 auto-rows-auto grid-cols-3">
           <p className='col-span-2'>
             Lorem ipsum dolor sit amet, officia excepteur ex fugiat

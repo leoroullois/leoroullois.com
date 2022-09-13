@@ -8,6 +8,7 @@ import Portfolio from '@sections/portfolio';
 import Hero from '@sections/hero';
 import About from '@sections/about';
 import Contact from '@sections/contact';
+import Skills from '@sections/skills';
 
 const Home: NextPage = () => {
   return (
@@ -20,6 +21,7 @@ const Home: NextPage = () => {
       <main className='flex flex-col w-full h-full min-h-screen'>
         <Hero />
         <About />
+        <Skills />
         <Portfolio />
         <Contact />
       </main>

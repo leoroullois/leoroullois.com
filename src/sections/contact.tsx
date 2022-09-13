@@ -8,7 +8,7 @@ const Contact = () => {
     <section className='py-5'>
       <Wrapper className='flex-col gap-y-5'>
         <h2>Work together</h2>
-        <Bars />
+        <Bars align="left" theme="blue" />
         <div className='flex gap-x-5'>
           <Button type='primary'>Contact form</Button>
           <Button type='secondary'>contact@leoroullois.com</Button>

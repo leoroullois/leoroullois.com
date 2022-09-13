@@ -6,7 +6,7 @@ interface IProps {
 
 const Title: FC<PropsWithChildren<IProps>> = ({children, as}) => {
   const className =
-    'mx-auto my-0 flex px-5 py-2  bg-gradient-to-r from-blue-500 to-indigo-700 font-bold uppercase text-gray-50 w-min rounded-lg shadow font-serif';
+    'mx-auto my-0 flex px-5 py-2  bg-gradient-to-r from-blue-500 to-indigo-700 font-bold uppercase text-gray-50 w-auto rounded-lg shadow font-serif';
   switch (as) {
     case 'h2':
       return <h2 className={clsx(className, 'text-xl')}>{children}</h2>;
