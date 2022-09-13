@@ -6,11 +6,7 @@ interface IProps {
 }
 
 const Layout: FC<PropsWithChildren<IProps>> = ({children, type}) => {
-  // FIX: to remove
-  console.log({type});
-  return <MainLayout>
-    {children}
-  </MainLayout>;
+  return <MainLayout>{children}</MainLayout>;
 };
 
 export default Layout;

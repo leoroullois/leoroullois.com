@@ -34,7 +34,7 @@ const References: FC<IProps> = ({title, year, description, skills, url}) => {
         <h4 className='text-slate-900/80 text-sm mt-2'>{`/ ${year}`}</h4>
       </div>
       <p className='text-slate-900/80'>{description}</p>
-      <div className='flex flex-wrap gap-3'>
+      <div className='flex flex-wrap gap-8'>
         {skills.map((skill, i) => (
           <Skill key={i}>{skill}</Skill>
         ))}
