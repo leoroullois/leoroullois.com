@@ -23,6 +23,7 @@ const Canvas: FC<IProps> = (props) => {
         }}
         enablePan={false}
       />
+      {/* eslint-disable react/no-unknown-property  */}
       <ambientLight intensity={0.2} />
 
       <directionalLight position={[5, -5, -5]} intensity={0.8} />

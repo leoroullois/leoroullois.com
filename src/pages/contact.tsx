@@ -1,7 +1,8 @@
 import Wrapper from '@components/_common/wrapper';
+import { NextPage } from 'next';
 import React from 'react';
 
-const Contact = () => {
+const Contact: NextPage = () => {
   return (
     <main className='flex flex-1'>
       <Wrapper className='flex-col gap-y-3 py-5'>
