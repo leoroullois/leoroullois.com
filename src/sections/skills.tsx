@@ -5,11 +5,12 @@ import Wrapper from '@components/_common/wrapper';
 import clsx from 'clsx';
 import Link from 'next/link';
 import React from 'react';
+import {Fade} from 'react-awesome-reveal';
 
 const Skills = () => {
   return (
     <section
-      id="skills"
+      id='skills'
       className={clsx(
         'relative z-30 py-5 bg-slate-900 text-gray-50 mt-[60px]',
         'after:z-10 after:absolute after:inset-0 after:w-0 after:h-0',
@@ -24,9 +25,11 @@ const Skills = () => {
         </h2>
         <Bars theme='blue' align='center' />
         <div className='flex flex-col gap-y-8'>
-          <Technologies category='Web' />
-          <Technologies category='API & Database' />
-          <Technologies category='Tools & other' />
+          <Fade triggerOnce cascade damping={0.5}>
+            <Technologies category='Web' />
+            <Technologies category='API & Database' />
+            <Technologies category='Tools & other' />
+          </Fade>
         </div>
         <p>
           Visit my GitHub :{' '}

@@ -5,6 +5,7 @@ import Wrapper from '@components/_common/wrapper';
 import {references} from '@lib/data';
 import clsx from 'clsx';
 import React, {FC} from 'react';
+import {Fade} from "react-awesome-reveal";
 
 const Portfolio: FC = () => {
   return (
@@ -19,16 +20,19 @@ const Portfolio: FC = () => {
           </h2>
           <Bars align='center' theme='pink' />
         </div>
+        <Fade triggerOnce cascade damping={0.5} >
         <div
           className={clsx(
             'grid gap-y-8 grid-cols-1 auto-rows-auto',
             'sm:grid-cols-2 sm:gap-x-5'
           )}
         >
+
           {references.map((props, i) => (
             <References key={i} {...props} />
           ))}
         </div>
+        </Fade>
       </Wrapper>
     </section>
   );
