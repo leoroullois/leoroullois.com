@@ -1,11 +1,15 @@
+import React, { FC } from 'react';
+
 import Button from '@components/button';
-import Canvas from '@components/threejs/canvas';
 import Bars from '@components/_common/bars';
 import Wrapper from '@components/_common/wrapper';
 import clsx from 'clsx';
-import React from 'react';
 import { BsFillFileEarmarkPdfFill} from "react-icons/bs";
-const About = () => {
+
+// import Canvas from '@components/threejs/canvas';
+const Canvas = React.lazy(() => import("@components/threejs/canvas"));
+
+const About : FC = () => {
   return (
     <section id="about" className='py-5'>
       <Wrapper className='flex-col gap-y-5'>
