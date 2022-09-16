@@ -9,6 +9,7 @@ import Hero from '@sections/hero';
 import About from '@sections/about';
 import Contact from '@sections/contact';
 import Skills from '@sections/skills';
+import Start from '@components/_common/start';
 
 const Home: NextPage = () => {
   return (
@@ -17,12 +18,14 @@ const Home: NextPage = () => {
         <title>Léo ROULLOIS - Portfolio</title>
       </Head>
       <Cursor />
+      <Start />
       <StatusBar />
-      <main className='flex flex-col w-full h-full min-h-screen'>
+      <main className='flex flex-1 flex-col w-full h-full min-h-screen'>
         <Hero />
         <About />
         <Skills />
         <Portfolio />
+        {/* TODO: quote malt  */}
         <Contact />
       </main>
     </>

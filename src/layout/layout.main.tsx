@@ -5,7 +5,7 @@ import Footer from '@components/footer';
 
 const MainLayout: FC<PropsWithChildren> = ({children}) => {
   return (
-    <div className="relative bg-gray-50 text-slate-900 overflow-hidden">
+    <div className="flex flex-col justify-between min-h-screen relative bg-gray-50 text-slate-900 overflow-hidden">
       <Header />
       {children}
       <Footer />

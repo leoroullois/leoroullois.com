@@ -5,7 +5,7 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <section className='py-5'>
+    <section id="contact" className='py-5'>
       <Wrapper className='flex-col gap-y-5'>
         <h2 className='text-3xl font-serif font-semibold'>Work together</h2>
         <Bars align='left' theme='blue' />
@@ -14,8 +14,8 @@ const Contact = () => {
           contact me.
         </p>
         <div className='flex flex-wrap gap-5'>
-          <Button type='primary'>Contact form</Button>
-          <Button type='secondary'>contact@leoroullois.com</Button>
+          <Button type='primary' href="/contact">Contact form</Button>
+          <Button type='secondary' href="mailto:contact@leoroullois.com">contact@leoroullois.com</Button>
         </div>
       </Wrapper>
     </section>

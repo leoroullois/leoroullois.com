@@ -13,6 +13,8 @@
   },
   "dependencies": {
     "@fastify/nextjs": "^9.1.1",
+    "@react-three/drei": "^9.30.1",
+    "@react-three/fiber": "^8.7.3",
     "@tailwindcss/typography": "^0.5.7",
     "clsx": "^1.2.1",
     "fastify": "^4.5.3",
@@ -20,12 +22,14 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
-    "sharp": "^0.31.0"
+    "sharp": "^0.31.0",
+    "three": "^0.144.0"
   },
   "devDependencies": {
     "@types/node": "18.7.14",
     "@types/react": "18.0.18",
     "@types/react-dom": "18.0.6",
+    "@types/three": "^0.144.0",
     "autoprefixer": "^10.4.8",
     "eslint": "8.23.0",
     "eslint-config-next": "12.2.5",

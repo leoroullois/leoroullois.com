@@ -30,8 +30,8 @@ const Hero = () => {
             </p>
           </div>
           <div className={clsx('flex flex-col gap-6 w-full', "sm:flex-row")}>
-            <Button type='primary'>{email}</Button>
-            <Button type='secondary'>Learn more</Button>
+            <Button href="#contact" type='primary'>{email}</Button>
+            <Button href="#about" type='secondary'>Learn more</Button>
           </div>
         </div>
         <div

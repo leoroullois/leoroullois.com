@@ -18,10 +18,10 @@ const Header = () => {
   };
   const links: ILinks[] = [
     {href: '/', label: 'Home'},
-    {href: '/skills', label: 'Skills'},
-    {href: '/about', label: 'About me'},
-    {href: '/portfolio', label: 'Portfolio'},
-    {href: '/contact', label: 'Contact'},
+    {href: '#about', label: 'About me'},
+    {href: '#skills', label: 'Skills'},
+    {href: '#portfolio', label: 'Portfolio'},
+    {href: '#contact', label: 'Contact'},
   ];
   const icons: IIconsText[] = [
     {href: 'https://github.com/leoroullois', icon: <IoLogoGithub className='text-2xl'/>},

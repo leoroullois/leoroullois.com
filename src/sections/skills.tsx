@@ -9,6 +9,7 @@ import React from 'react';
 const Skills = () => {
   return (
     <section
+      id="skills"
       className={clsx(
         'relative z-30 py-5 bg-slate-900 text-gray-50 mt-[60px]',
         'after:z-10 after:absolute after:inset-0 after:w-0 after:h-0',

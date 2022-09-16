@@ -14,6 +14,10 @@ const StatusBar: FC = () => {
     };
 
     window.addEventListener('scroll', scrollListener);
+
+    return () => {
+      window.removeEventListener("scroll", scrollListener);
+    }
   }, []);
 
   const getProgressBarWidth = (scroll: number): number => {

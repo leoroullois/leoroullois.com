@@ -8,7 +8,7 @@ import React, {FC} from 'react';
 
 const Portfolio: FC = () => {
   return (
-    <section className='bg-gray-200 py-12'>
+    <section id="portfolio" className='bg-gray-200 py-12'>
       <Wrapper className='flex-col gap-y-12'>
         <div className='flex flex-col gap-y-5'>
           <Title theme='pink' as='h2'>
