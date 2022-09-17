@@ -4,7 +4,6 @@ import PinkLink from '@components/_common/pink-link';
 import Title from '@components/_common/title';
 import Wrapper from '@components/_common/wrapper';
 import clsx from 'clsx';
-import Link from 'next/link';
 import React from 'react';
 import {Fade} from 'react-awesome-reveal';
 
@@ -19,6 +18,19 @@ const Skills = () => {
         'after:border-transparent after:border-b-slate-900'
       )}
     >
+      <div
+        className={clsx(
+          'hidden absolute left-full top-full -translate-x-64 -translate-y-64 h-48 w-48 rounded-full border-4 border-pink-500/50 z-0',
+          'sm:flex',
+          'md:-translate-x-96'
+        )}
+      ></div>
+      <div
+        className={clsx(
+          'hidden absolute left-full top-0 -translate-x-56 h-48 w-48 rounded-full border-4 border-blue-500/50 z-0',
+          'sm:flex'
+        )}
+      ></div>
       <Wrapper className='relative z-20 gap-y-5 flex-col'>
         <Title as='h2'>My skills</Title>
         <h2 className='text-center text-3xl font-serif font-semibold'>

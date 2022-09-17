@@ -33,7 +33,7 @@ const About: FC = () => {
               'flex flex-col justify-evenly gap-y-6 sm:col-span-2'
             )}
           >
-            <Fade triggerOnce cascade>
+            <Fade triggerOnce cascade damping={0.1}>
               <p>
                 I am a freelance developer specialized in the creation of React,
                 Next.js, Node, JavaScript applications and websites. I have a

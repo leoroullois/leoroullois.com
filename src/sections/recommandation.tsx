@@ -3,6 +3,7 @@ import Wrapper from '@common/wrapper';
 import Image from 'next/image';
 import clsx from 'clsx';
 import {VscQuote} from 'react-icons/vsc';
+import {Fade} from 'react-awesome-reveal';
 
 const recommandation = () => {
   return (
@@ -24,15 +25,17 @@ const recommandation = () => {
           />
         </div>
         <div className='relative flex flex-col justify-evenly gap-y-5'>
-          <VscQuote className='absolute -top-20 -left-8 z-10 text-9xl text-pink-500/10' />
-          <p className='relative z-20 text-2xl'>
-            Léo contributed as a developer on an internal application project
-            for a client. Fast, serious and competent. Very nice collaboration,
-            I highly recommend Léo!
-          </p>
-          <p className='relative z-20 text-md font-bold text-pink-500'>
-            Sylvain Gibaud
-          </p>
+          <Fade cascade damping={0.1} triggerOnce>
+            <VscQuote className='absolute -top-20 -left-8 z-10 text-9xl text-pink-500/10' />
+            <p className='relative z-20 text-2xl'>
+              Léo contributed as a developer on an internal application project
+              for a client. Fast, serious and competent. Very nice
+              collaboration, I highly recommend Léo!
+            </p>
+            <p className='relative z-20 text-md font-bold text-pink-500'>
+              Sylvain Gibaud
+            </p>
+          </Fade>
         </div>
       </Wrapper>
     </section>

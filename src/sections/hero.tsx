@@ -6,7 +6,7 @@ import {email} from 'src/lib/constants';
 
 import Button from '@components/button';
 import Wrapper from '@common/wrapper';
-import {Fade} from "react-awesome-reveal";
+import {Fade} from 'react-awesome-reveal';
 
 const Hero = () => {
   return (
@@ -20,24 +20,26 @@ const Hero = () => {
         >
           <div className='flex flex-col gap-y-4'>
             <Fade triggerOnce cascade damping={0.5}>
-
-            <h1 className='flex text-xl font-bold'>
-              Hello, I&apos;m Léo Roullois.
-            </h1>
-            <h2 className={clsx('text-3xl font-bold', "sm:text-5xl")}>
-              Freelance web developer and student at{' '}
-              <span className='text-blue-600'>ESIEE Paris</span>
-            </h2>
-            <p className='text-lg text-slate-900/80'>
-              ESIEE Paris student & freelance web developer (React / Next.js).
-            </p>
+              <h1 className='flex text-xl font-bold'>
+                Hello, I&apos;m Léo Roullois.
+              </h1>
+              <h2 className={clsx('text-3xl font-bold', 'sm:text-5xl')}>
+                Freelance web developer and student at{' '}
+                <span className='text-blue-600'>ESIEE Paris</span>
+              </h2>
+              <p className='text-lg text-slate-900/80'>
+                ESIEE Paris student & freelance web developer (React / Next.js).
+              </p>
             </Fade>
           </div>
-          <div className={clsx('flex flex-col gap-6 w-full', "sm:flex-row")}>
-            <Fade>
-
-            <Button href="#contact" type='primary'>{email}</Button>
-            <Button href="#about" type='secondary'>Learn more</Button>
+          <div className={clsx('flex flex-col gap-6 w-full', 'sm:flex-row')}>
+            <Fade triggerOnce>
+              <Button href='#contact' type='primary'>
+                {email}
+              </Button>
+              <Button href='#about' type='secondary'>
+                Learn more
+              </Button>
             </Fade>
           </div>
         </div>
