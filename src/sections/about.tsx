@@ -7,6 +7,7 @@ import clsx from 'clsx';
 import {BsFillFileEarmarkPdfFill} from 'react-icons/bs';
 import {Fade} from 'react-awesome-reveal';
 import Link from 'next/link';
+import PinkLink from '@components/_common/pink-link';
 
 const Canvas = React.lazy(() => import('@components/threejs/canvas'));
 
@@ -26,7 +27,7 @@ const About: FC = () => {
         >
           <div
             className={clsx(
-              'flex flex-col justify-around gap-y-5 sm:col-span-2'
+              'flex flex-col justify-evenly gap-y-6 sm:col-span-2'
             )}
           >
             <Fade triggerOnce cascade>
@@ -39,18 +40,21 @@ const About: FC = () => {
                 practices...
               </p>
               <p>
-                I am currently specializing in cybersecurity at ESIEE Paris engineering school, and I am looking for an internship in this field (4 months from May to August 2023). 
+                I am currently specializing in cybersecurity at ESIEE Paris
+                engineering school, and I am looking for an <PinkLink href="/internship">internship</PinkLink> in this
+                field (4 months from May to August 2023).
               </p>
               <p>
-                <Link href="#contact">
+                <Link href='#contact'>
                   <a>
-                    You can contact me if you want to hire me.
+                    You can <PinkLink href='#contact'>contact me</PinkLink> if
+                    you want to hire me.
                   </a>
                 </Link>
               </p>
               <Button type='primary' href='/cv.pdf'>
                 <BsFillFileEarmarkPdfFill className='text-xl mr-6' />
-                Téléchargez mon CV !
+                Download my CV !
               </Button>
             </Fade>
           </div>

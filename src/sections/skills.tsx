@@ -1,5 +1,6 @@
 import Technologies from '@components/technologies';
 import Bars from '@components/_common/bars';
+import PinkLink from '@components/_common/pink-link';
 import Title from '@components/_common/title';
 import Wrapper from '@components/_common/wrapper';
 import clsx from 'clsx';
@@ -33,18 +34,9 @@ const Skills = () => {
         </div>
         <p>
           Visit my GitHub :{' '}
-          <Link href='https://www.github.com/leoroullois'>
-            <a
-              className={clsx(
-                'cursor-hover',
-                'relative duration-100 z-20 text-pink-500',
-                'after:absolute after:left-0 after:-bottom-[3px] after:w-full after:bg-pink-500/10 after:h-[2px] bg-transparent after:z-10 after:duration-100',
-                'hover:after:bg-pink-500/10 hover:after:h-[24px]'
-              )}
-            >
-              @leoroullois
-            </a>
-          </Link>
+          <PinkLink href='https://www.github.com/leoroullois'>
+            @leoroullois
+          </PinkLink>
         </p>
       </Wrapper>
     </section>
