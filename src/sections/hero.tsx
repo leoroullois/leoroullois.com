@@ -54,6 +54,7 @@ const Hero = () => {
               layout='fill'
               objectFit='cover'
               alt='Profile picture'
+              loading='lazy'
             />
           </div>
         </div>

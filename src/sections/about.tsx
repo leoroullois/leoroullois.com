@@ -8,13 +8,16 @@ import {BsFillFileEarmarkPdfFill} from 'react-icons/bs';
 import {Fade} from 'react-awesome-reveal';
 import Link from 'next/link';
 import PinkLink from '@components/_common/pink-link';
+import Image from 'next/image';
+import BgSvg from '@components/_common/bg-svg';
 
 const Canvas = React.lazy(() => import('@components/threejs/canvas'));
 
 const About: FC = () => {
   return (
-    <section id='about' className='py-5'>
-      <Wrapper className='flex-col gap-y-5'>
+    <section id='about' className='relative py-5'>
+      <BgSvg className="text-gray-200 transform -translate-y-1/2 left-full -translate-x-1/2" />
+      <Wrapper className='relative flex-col gap-y-5'>
         <Fade triggerOnce>
           <h2 className='text-3xl font-serif font-semibold'>About me</h2>
           <Bars theme='black' align='left' />
@@ -41,16 +44,13 @@ const About: FC = () => {
               </p>
               <p>
                 I am currently specializing in cybersecurity at ESIEE Paris
-                engineering school, and I am looking for an <PinkLink href="/internship">internship</PinkLink> in this
-                field (4 months from May to August 2023).
+                engineering school, and I am looking for an{' '}
+                <PinkLink href='/internship'>internship</PinkLink> in this field
+                (4 months from May to August 2023).
               </p>
               <p>
-                <Link href='#contact'>
-                  <a>
-                    You can <PinkLink href='#contact'>contact me</PinkLink> if
-                    you want to hire me.
-                  </a>
-                </Link>
+                You can <PinkLink href='#contact'>contact me</PinkLink> if you
+                want to hire me.
               </p>
               <Button type='primary' href='/cv.pdf'>
                 <BsFillFileEarmarkPdfFill className='text-xl mr-6' />

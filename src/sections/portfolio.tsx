@@ -1,5 +1,6 @@
 import References from '@components/cards/references';
 import Bars from '@components/_common/bars';
+import BgSvg from '@components/_common/bg-svg';
 import Title from '@components/_common/title';
 import Wrapper from '@components/_common/wrapper';
 import {references} from '@lib/data';
@@ -9,8 +10,9 @@ import {Fade} from "react-awesome-reveal";
 
 const Portfolio: FC = () => {
   return (
-    <section id="portfolio" className='bg-gray-200 py-12'>
-      <Wrapper className='flex-col gap-y-12'>
+    <section id="portfolio" className='relative py-12'>
+      <BgSvg className="text-gray-200 transform -translate-y-1/2 left-0 -translate-x-1/2" />
+      <Wrapper className='relative flex-col gap-y-12'>
         <div className='flex flex-col gap-y-5'>
           <Title theme='blue' as='h2'>
             Portoflio
