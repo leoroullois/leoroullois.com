@@ -10,6 +10,7 @@ import About from '@sections/about';
 import Contact from '@sections/contact';
 import Skills from '@sections/skills';
 import Start from '@components/_common/start';
+import Recommandation from "@sections/recommandation";
 
 const Home: NextPage = () => {
   return (
@@ -25,7 +26,7 @@ const Home: NextPage = () => {
         <About />
         <Skills />
         <Portfolio />
-        {/* TODO: quote malt  */}
+        <Recommandation />
         <Contact />
       </main>
     </>

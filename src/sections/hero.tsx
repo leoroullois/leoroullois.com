@@ -10,7 +10,7 @@ import {Fade} from "react-awesome-reveal";
 
 const Hero = () => {
   return (
-    <section className='w-full overflow-hidden'>
+    <section className='bg-white shadow-sm w-full overflow-hidden'>
       <Wrapper className={clsx('flex flex-col gap-x-24', 'lg:flex-row')}>
         <div
           className={clsx(

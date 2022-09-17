@@ -12,13 +12,13 @@ const Portfolio: FC = () => {
     <section id="portfolio" className='bg-gray-200 py-12'>
       <Wrapper className='flex-col gap-y-12'>
         <div className='flex flex-col gap-y-5'>
-          <Title theme='pink' as='h2'>
+          <Title theme='blue' as='h2'>
             Portoflio
           </Title>
           <h2 className='text-center text-3xl font-serif font-semibold'>
             Développement front-end
           </h2>
-          <Bars align='center' theme='pink' />
+          <Bars align='center' theme='blue' />
         </div>
         <Fade triggerOnce cascade damping={0.5} >
         <div

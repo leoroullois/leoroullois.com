@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <section id="contact" className='py-5'>
       <Wrapper className='flex-col gap-y-5'>
-        <h2 className='text-3xl font-serif font-semibold'>Work together</h2>
+        <h2 className='text-3xl font-serif font-semibold'>Get In Touch</h2>
         <Bars align='left' theme='blue' />
         <p>
           You have a project and you want to work with me? Do not hesitate to
