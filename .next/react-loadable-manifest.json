@@ -1,0 +1,10 @@
+{
+  "../sections/about.tsx -> @components/threejs/canvas": {
+    "id": 197,
+    "files": [
+      "static/chunks/fb7d5399.207ea65f128897be.js",
+      "static/chunks/299.d699cc7ca77d1cb6.js",
+      "static/chunks/197.e2911b7e5d2225bd.js"
+    ]
+  }
+}
