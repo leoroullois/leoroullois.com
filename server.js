@@ -8,10 +8,12 @@ fastify
     fastify.next('/*');
   });
 
+const port = 50_001;
+
 const start = async () => {
   try {
-    await fastify.listen({port: 3000});
-    console.log('Server listening on http://localhost:3000');
+    await fastify.listen({port});
+    console.log(`Server listening on http://localhost:${port}`);
   } catch (err) {
     fastify.log.error(err);
     process.exit(1);
