@@ -1,12 +1,16 @@
 import React, {MouseEventHandler, useState} from 'react';
-import {IoMenu} from 'react-icons/io5';
+import Link from 'next/link';
+import clsx from 'clsx';
+
 import {IIconsText, ILinks} from '@lib/types';
 
-import LangSelect from '@common/lang-select';
 import Wrapper from '@common/wrapper';
 import NavBar from '@components/navbar';
-import clsx from 'clsx';
+
+import {IoMenu} from 'react-icons/io5';
 import {IoLogoGithub, IoLogoTwitter} from 'react-icons/io';
+import {FaPen} from 'react-icons/fa';
+
 import RootMe from './logos/root-me';
 
 const Header = () => {
@@ -46,13 +50,11 @@ const Header = () => {
             Léo Roullois
           </h2>
           <div className='flex items-center gap-x-9'>
-            <LangSelect
-              defaultValue='fr'
-              options={[
-                {value: 'fr', label: 'FR'},
-                {value: 'en', label: 'EN'},
-              ]}
-            />
+            <Link href='/blog'>
+              <a className={clsx("text-gray-50 duration-100", "hover:text-gray-200")}>
+                <FaPen  />
+              </a>
+            </Link>
             <IoMenu
               className={clsx(
                 'text-3xl text-gray-50 cursor-pointer',
