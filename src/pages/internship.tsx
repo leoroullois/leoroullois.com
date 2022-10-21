@@ -1,6 +1,6 @@
 import {NextPage} from 'next';
 import React from 'react';
-import Head from "next/head";
+import Head from 'next/head';
 
 const Internship: NextPage = () => {
   return (
@@ -8,7 +8,7 @@ const Internship: NextPage = () => {
       <Head>
         <title>Intership - Léo Roullois</title>
       </Head>
-      <main>Intership</main>
+      <main className="absolute inset-0 text-6xl flex justify-center items-center bg-slate-900 text-gray-50" >aGlyZSBtZQ==</main>
     </>
   );
 };

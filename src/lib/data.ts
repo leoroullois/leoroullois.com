@@ -2,26 +2,26 @@ import {ICompetence} from './types';
 
 export const references = [
   {
-    title: 'Titre de mon truc',
+    title: 'RubiKube',
     year: 2022,
     description:
-      'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
-    skills: ['TypeScript', 'React', 'Next.js'],
-    url: 'https://www.github.com',
+      "RubiKube is the best place to learn and improve at rubik's cube.",
+    skills: ['TypeScript', 'React', 'Next.js', 'ThreeJS'],
+    url: 'https://rubikube.vercel.app/',
   },
   {
-    title: 'Titre de mon truc 2',
+    title: 'Password cracker',
     year: 2022,
-    description: 'Lorem ipsum dolor sit amet',
-    skills: ['Docker', 'Prisma', 'Next.js', 'PostgreSQL', "test"],
-    url: 'https://www.github.com',
+    description: 'Provide a hashed password and the hash method, and then the program will retrieve the password in clear.',
+    skills: ['Bash', 'OpenSSL'],
+    url: 'https://www.github.com/leoroullois/password_cracker',
   },
   {
-    title: 'Titre de mon truc',
+    title: 'Basic Shell',
     year: 2022,
-    description: 'Lorem ipsum dolor sit amet',
-    skills: ['TypeScript', 'React', 'Next.js'],
-    url: 'https://www.github.com',
+    description: 'A basic shell created in C.',
+    skills: ['C'],
+    url: 'https://www.github.com/leoroullois/basic-shell',
   },
 ];
 

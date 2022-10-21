@@ -28,7 +28,7 @@ const NavBar: FC<IProps> = ({links, icons, toggleMenu, isOpen, setIsOpen}) => {
     <nav
       ref={ref}
       className={clsx(
-        'z-40 flex flex-col  bg-gray-50 min-w-min w-48 mb-10 h-screen fixed right-0 top-0 gap-y-6 px-9 py-4 shadow duration-200',
+        'z-40 flex flex-col bg-slate-900 text-gray-50 min-w-min w-48 mb-10 h-screen fixed right-0 top-0 gap-y-6 px-9 py-4 shadow duration-200',
         {'translate-x-full ': !isOpen, 'backdrop-brightness-50': isOpen},
         'md:translate-x-0 md:static md:flex-row md:items-center md:justify-between md:w-full md:rounded-lg md:h-auto'
       )}

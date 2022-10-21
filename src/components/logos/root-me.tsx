@@ -1,7 +1,7 @@
 import Image from 'next/image';
 // import React from 'react';
 
-import logo from '@public/root-me.svg';
+import logo from '@public/root-me2.svg';
 
 const RootMe = () => {
   const n = 26;

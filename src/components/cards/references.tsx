@@ -24,7 +24,7 @@ const References: FC<IProps> = ({title, year, description, skills, url}) => {
     <article
       className={clsx(
         'cursor-hover',
-        'flex flex-col gap-y-5 bg-gray-100 rounded-lg shadow-md p-5 duration-100 cursor-pointer',
+        'flex flex-col gap-y-5 bg-gray-900 text-gray-100 rounded-lg shadow-md p-5 duration-100 cursor-pointer',
         'hover:shadow-xl'
       )}
       onClick={handleClick}
@@ -32,11 +32,11 @@ const References: FC<IProps> = ({title, year, description, skills, url}) => {
       <Fade triggerOnce>
         
       <div className={clsx('flex items-center flex-wrap gap-x-3')}>
-        <IoLogoGithub className='w-14 h-14 bg-gray-200 text-slate-900 p-3 rounded-full shadow' />
+        <IoLogoGithub className='w-8 h-8 text-gray-50' />
         <h3 className='text-2xl font-bold'>{title}</h3>
         <h4 className='text-slate-900/80 text-sm mt-2'>{`/ ${year}`}</h4>
       </div>
-      <p className='text-slate-900/80'>{description}</p>
+      <p className=''>{description}</p>
       <div className='flex flex-wrap gap-8'>
         {skills.map((skill, i) => (
           <Skill key={i}>{skill}</Skill>

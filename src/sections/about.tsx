@@ -6,21 +6,19 @@ import Wrapper from '@components/_common/wrapper';
 import clsx from 'clsx';
 import {BsFillFileEarmarkPdfFill} from 'react-icons/bs';
 import {Fade} from 'react-awesome-reveal';
-import Link from 'next/link';
 import PinkLink from '@components/_common/pink-link';
-import Image from 'next/image';
 import BgSvg from '@components/_common/bg-svg';
 
 const Canvas = React.lazy(() => import('@components/threejs/canvas'));
 
 const About: FC = () => {
   return (
-    <section id='about' className='relative py-5'>
-      <BgSvg className="text-gray-200 transform -translate-y-1/2 left-full -translate-x-1/2" />
+    <section id='about' className='bg-slate-900 relative py-5'>
+      <BgSvg className="text-gray-200/5 transform -translate-y-1/2 left-full -translate-x-1/2" />
       <Wrapper className='relative flex-col gap-y-5'>
         <Fade triggerOnce>
           <h2 className='text-3xl font-serif font-semibold'>About me</h2>
-          <Bars theme='black' align='left' />
+          <Bars theme='pink' align='left' />
         </Fade>
         <div
           className={clsx(

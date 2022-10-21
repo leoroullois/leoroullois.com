@@ -12,10 +12,10 @@ const Skills = () => {
     <section
       id='skills'
       className={clsx(
-        'relative z-30 py-5 bg-slate-900 text-gray-50 mt-[60px]',
+        'relative z-30 py-5 bg-gray-900 text-gray-50 mt-[60px]',
         'after:z-10 after:absolute after:inset-0 after:w-0 after:h-0',
         'after:border-0 after:-top-[60px] after:border-b-[60px] after:border-l-[100vw]',
-        'after:border-transparent after:border-b-slate-900'
+        'after:border-transparent after:border-b-gray-900'
       )}
     >
       <div

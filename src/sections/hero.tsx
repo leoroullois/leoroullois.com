@@ -10,7 +10,7 @@ import {Fade} from 'react-awesome-reveal';
 
 const Hero = () => {
   return (
-    <section className='bg-white shadow-sm w-full overflow-hidden'>
+    <section className='bg-gray-900 text-gray-50 border-b border-b-white/5 w-full overflow-hidden'>
       <Wrapper className={clsx('flex flex-col gap-x-24', 'lg:flex-row')}>
         <div
           className={clsx(
@@ -27,7 +27,7 @@ const Hero = () => {
                 Freelance web developer and student at{' '}
                 <span className='text-blue-600'>ESIEE Paris</span>
               </h2>
-              <p className='text-lg text-slate-900/80'>
+              <p className='text-lg text-gray-300'>
                 ESIEE Paris student & freelance web developer (React / Next.js).
               </p>
             </Fade>
@@ -45,9 +45,9 @@ const Hero = () => {
         </div>
         <div
           className={clsx(
-            'relative z-20 flex flex-1 justify-center items-center bg-slate-900 w-full py-12',
+            'relative z-20 flex flex-1 justify-center items-center w-full py-12',
             'lg:w-96',
-            "after:content-['']  after:bg-slate-900 after:-skew-x-12 after:block after:-left-10 after:top-0 after:bottom-0 after:-right-[4000px] after:-translate-x-14 after:absolute after:z-10"
+            "after:content-[''] after:bg-slate-900 after:border-l-8 after:border-l-white after:-skew-x-12 after:block after:-left-10 after:top-0 after:bottom-0 after:-right-[4000px] after:-translate-x-14 after:absolute after:z-10"
           )}
         >
           <div className='relative z-20 flex h-52 w-52 rounded-full overflow-hidden border-8 border-white'>

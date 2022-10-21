@@ -13,12 +13,12 @@ const Portfolio: FC = () => {
     <section id='portfolio' className='relative py-12'>
       <BgSvg className='text-gray-200 transform -translate-y-1/2 left-0 -translate-x-1/2' />
       <Wrapper className='relative flex-col gap-y-12'>
+        <Title theme='blue' as='h2'>
+          Portoflio
+        </Title>
         <div className='flex flex-col gap-y-5'>
-          <Title theme='blue' as='h2'>
-            Portoflio
-          </Title>
           <h2 className='text-center text-3xl font-serif font-semibold'>
-            Développement front-end
+            Front-end, back-end, security development...
           </h2>
           <Bars align='center' theme='blue' />
         </div>
