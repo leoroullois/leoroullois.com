@@ -50,7 +50,7 @@ const Header = () => {
             Léo Roullois
           </h2>
           <div className='flex items-center gap-x-9'>
-            <Link href='/blog'>
+            <Link href={process.env.NEXT_PUBLIC_BLOG_HOST ?? "/"}>
               <a className={clsx("text-gray-50 duration-100", "hover:text-gray-200")}>
                 <FaPen  />
               </a>
